@@ -1,11 +1,11 @@
 html {
   box-sizing: border-box;
   line-height: 1.5;
-  font-family: "Karma", serif;
+  font-family: Karma, serif;
 }
 
 *,
-*::before
+*::before,
 *::after {
   box-sizing: inherit;
 }
@@ -19,18 +19,18 @@ main {
 }
 
 h2 {
-  font-family: "Oswald", sans-serif;
+  font-family: Oswald, sans-serif;
   color: #6f00e7;
   font-size: 2rem;
 }
 
 a {
-  font-family: "Oswald", sans-serif;
+  font-family: Oswald, sans-serif;
 }
 
 p {
   text-align: center;
-  margin: 0 0 1.5rem;
+  margin: 0;
   font-size: 1.4rem;
 }
 
@@ -42,7 +42,7 @@ ol {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
-  }
+}
 
 ol > li {
   border: 3px solid #987ffa;
@@ -52,4 +52,49 @@ ol > li {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
+}
+
+h2 + img {
+  order: -1;
+  max-width: 15em;
+  margin: 0;
+}
+
+ol ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+
+ul a {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+ul li {
+  padding: 0 .25em;
+}
+
+ul li:first-child {
+  margin-right: auto;
+}
+
+ul a img {
+  margin-right: .25em;
+}
+
+.btn {
+  background-color: #6f00e7;
+  color: #fff;
+  text-decoration: none;
+  padding: .5em 1.5em .7em;
+  border-radius: 3em;
+  font-weight: bold;
 }
